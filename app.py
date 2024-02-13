@@ -67,6 +67,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 import json
 import nltk
+nltk.download('stopwords')
 
 # Load the Bhagavad Gita JSON file with explicit encoding
 with open('MLData.json', 'r', encoding='utf-8') as file:
