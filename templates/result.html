@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+</head>
+<body>
+    <h2>Search Result</h2>
+    <p>User Query: {{ user_query }}</p>
+    <p>Most Similar Verse (Verse {{ verse_number }}):</p>
+    <p>{% autoescape false %}{{ highlighted_content }}{% endautoescape %}</p>
+    <p><a href="{{ verse_link }}" target="_blank">Read the verse here</a></p>
+</body>
+</html>
